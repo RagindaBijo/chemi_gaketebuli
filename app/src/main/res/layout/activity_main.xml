@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/teal_700">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:text="ტექ-ინსფექტირება"
+            android:textStyle="bold"
+            android:textSize="27dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/first"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:maxLength="2"
+                android:ems="10"
+                android:hint="XX"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textColorHint="@color/white"/>
+
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+
+
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxLength="3"
+                android:inputType="number"
+                android:hint="000"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:gravity="center"
+                tools:ignore="Deprecated" />
+
+
+
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+
+            <EditText
+                android:id="@+id/last"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxLength="2"
+                android:textColor="@color/white"
+                android:hint="XX"
+                android:textColorHint="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/editTech"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLength="9"
+            android:hint="ტექ-პასპორტის ნომერი"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:id="@+id/muButton"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="შემოწმება"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/orange"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
